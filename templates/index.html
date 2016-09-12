@@ -1,0 +1,15 @@
+<html>
+  <h1>Slack Code Challenge</h1>
+  <div>
+    <h2>HTML Tag Count</h2>
+    <ul>
+      {% for key,value in tag_counts.iteritems() %}
+        <li class="tag-item" name={{key}}>{{key}}: ({{value}})</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <pre>
+    {{site_content}}
+  </pre>
+
+</html>
