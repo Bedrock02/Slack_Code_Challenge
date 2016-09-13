@@ -25,7 +25,7 @@ def hello():
   html_contents = html_content.replace("\t", "")
   tag_count = defaultdict(int)
   for content in html_contents.splitlines():
-    match = re.search('<[a-z]+', content)
+    match = re.search('<[a-z]+[1-9]*', content)
     tag = match.group(0)[1:] if match else None
     if tag:
       tag_count[tag] += 1

@@ -5,3 +5,5 @@
   height: 1500px;
   overflow-y: scroll;
 }
+
+.highlight { background-color: yellow }

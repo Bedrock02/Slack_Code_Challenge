@@ -20,8 +20,8 @@
           <h3>HTML Tag Count</h3>
           <ul class="nav nav-list">
             {% for key,value in tag_counts.iteritems() %}
-              <li class="tag-item nav-header" name={{key}}>
-                <a href="#">{{key}}: ({{value}})</a>
+              <li class="tag-item nav-header">
+                <a href="#" class="tag-anchor" name={{key}}>{{key}}: ({{value}})</a>
               </li>
             {% endfor %}
           </ul>
@@ -36,5 +36,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
     <!-- <script type="text/javascript" src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}"></script -->>
     <script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/jquery.highlight-5.js')}}"></script>
   </body>
 </html>
