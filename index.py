@@ -29,7 +29,7 @@ def hello():
     tag = match.group(0)[1:] if match else None
     if tag:
       tag_count[tag] += 1
-  return render_template('index.html', site_content=html_content, tag_counts=tag_count)
+  return render_template('index.html', site_content=html_content, tag_counts=tag_count, query=query)
 
 if __name__ == "__main__":
   app.run()
